@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import { RouterProvider } from "react-router-dom";
-import { appRouter } from "./routes/routes";
 import { AppContext } from "./context/ContextApi";
+import { appRouter } from "./routes/Routes";
 
 const App = () => {
   return (
