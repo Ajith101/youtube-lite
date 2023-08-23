@@ -24,18 +24,6 @@ export const AppContext = ({ children }) => {
 };
 
 export const useAppContext = () => {
-  const {
-    setShowMenu,
-    ShowMenu,
-    searchRef,
-    currentCategory,
-    setCurrentCategory,
-  } = useContext(Context);
-  return {
-    ShowMenu,
-    setShowMenu,
-    searchRef,
-    currentCategory,
-    setCurrentCategory,
-  };
+  const appContext = useContext(Context);
+  return appContext;
 };
