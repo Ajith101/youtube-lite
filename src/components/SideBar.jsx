@@ -30,31 +30,31 @@ const SideBar = () => {
   const category = [
     {
       name: "News",
-      logo: <BiNews />,
+      logo: <BiNews size={"22px"} />,
     },
     {
       name: "Live",
-      logo: <CiStreamOn />,
+      logo: <CiStreamOn size={"22px"} />,
     },
     {
       name: "Gaming",
-      logo: <FaGamepad />,
+      logo: <FaGamepad size={"22px"} />,
     },
     {
       name: "Music",
-      logo: <MdMusicNote />,
+      logo: <MdMusicNote size={"22px"} />,
     },
     {
       name: "Trending",
-      logo: <BsFire />,
+      logo: <BsFire size={"22px"} />,
     },
     {
       name: "Sports",
-      logo: <MdOutlineSportsHandball />,
+      logo: <MdOutlineSportsHandball size={"22px"} />,
     },
     {
       name: "Shopping",
-      logo: <BiShoppingBag />,
+      logo: <BiShoppingBag size={"22px"} />,
     },
   ];
 
@@ -87,11 +87,11 @@ const SideBar = () => {
           }}
           className={`flex ${
             currentCategory === "Home" && pathname === "/"
-              ? "bg-black py-[10px]"
+              ? "bg-black px-4 py-[20px]"
               : ""
-          } w-full items-center gap-3 rounded-[10px] px-[10px] py-[5px] text-left text-white`}
+          } w-full items-center gap-4 rounded-[10px] px-[10px] py-[5px] text-left text-white`}
         >
-          <AiFillHome /> Home
+          <AiFillHome size={"22px"} /> Home
         </button>
         {category.map((item, id) => {
           return (
@@ -104,7 +104,7 @@ const SideBar = () => {
                 currentCategory === item.name && pathname === "/"
                   ? "bg-black py-[10px]"
                   : ""
-              } w-full items-center gap-3 rounded-[10px] px-[10px] py-[5px] text-left text-white`}
+              } w-full items-center gap-4 rounded-[10px] px-[10px] py-[5px] text-left text-white`}
               key={id}
             >
               {item.logo} {item.name}
